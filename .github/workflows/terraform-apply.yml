@@ -65,7 +65,7 @@ jobs:
       - name: Configure Inventory
         env:
           TF_OUTPUT: ${{ needs.terraform.outputs.workspace-outputs}}
-        run:
+        run: echo "$TF_OUTPUT"
         # run: |
         #   echo "[servers]" > inventory
         #   echo "${{ steps.terraform. }}" >> inventory
