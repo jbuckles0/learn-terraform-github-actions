@@ -47,7 +47,7 @@ jobs:
           comment: "Apply Run from GitHub Actions CI ${{ github.sha }}"
 
       - name: Output
-        uses: hashicorp/tfc-workflows-github/actions/workspace-output@v1.0.0
+        uses: hashicorp/tfc-workflows-github/actions/workspace-output@v1.3.0
         id: tf-output
         with:
           workspace: ${{ env.TF_WORKSPACE }}
